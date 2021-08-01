@@ -65,6 +65,7 @@ function biggerThanThree(numbers2) {
     }
   }
   return array;
+  // return numbers2.filter((number) => number > 3);
 }
 
 const numbers2 = [1, 2, 3, 4, 5, 6, 7];
