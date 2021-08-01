@@ -56,3 +56,53 @@ dog.say();
 
 
 // 3. Getter 함수와 Setter 함수
+const numbers = {
+  a: 1,
+  b: 2,
+  get sum() {
+    console.log('sum 함수 실행');
+    return this.a + this.b;
+  }
+}
+
+console.log(numbers.sum);
+numbers.b = 5;
+console.log(numbers.sum);
+// numbers.sum() 을 한 것이 아니라 number.sum 을 조회했을 뿐인데, 함수가 실행되고 그 결과값이 출력됨
+
+// setter 함수 사용해보기
+const numbers2 = {
+  _a: 1,
+  _b: 2,
+  sum: 3,
+  calculate() {
+    console.log('calculate');
+    this.sum = this._a + this._b;
+  },
+  get a() {
+    return this._a;
+  },
+  get b() {
+    return this._b;
+  },
+  set a(value) {
+    console.log('a 변경');
+    this._a = value;
+    this.calculate();
+  },
+  set b(value) {
+    console.log('b 변경');
+    this._b = value;
+    this.calculate;
+  }
+}
+
+console.log(numbers2.sum);
+numbers2.a = 5;
+numbers2.b = 7;
+numbers2.a = 9;
+console.log(numbers2.sum);
+console.log(numbers2.sum);
+console.log(numbers2.sum);
+// 아까 전에는 만든 객체에서는 numbers.sum 이 조회 될 때마다 덧셈이 이루어졌었지만, 
+// 이제는 a 혹은 b 값이 바뀔 때마다 sum 값을 연산합니다.
