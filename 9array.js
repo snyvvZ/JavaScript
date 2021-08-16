@@ -78,3 +78,5 @@ fruits.push("사과");
 console.log(fruits);
 console.log(fruits.indexOf("사과"));
 console.log(fruits.lastIndexOf("사과"));
+
+// TODO lib.ex5.d.ts 에서 array 읽어보기
