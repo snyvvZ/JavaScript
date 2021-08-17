@@ -107,3 +107,12 @@ const students = [
     .join();
   console.log(result);
 }
+
+// 11. 학생들의 점수를 낮은 순서로 정렬하기
+{
+  const result = students
+    .map((student) => student.score)
+    .sort((a, b) => a - b)
+    .join();
+  console.log(result);
+}
