@@ -76,3 +76,7 @@ animals.push("🐱");
 console.log(animals);
 console.log(animals.indexOf("🐱"));
 console.log(animals.lastIndexOf("🐱"));
+
+// NOTE pop은 삭제한 아이템을 반환함
+const poped = animals.pop();
+console.log(poped);
