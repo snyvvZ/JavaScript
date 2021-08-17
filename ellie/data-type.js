@@ -102,3 +102,7 @@ textDynamic = "7" + 5;
 console.log(`value: ${textDynamic}, type: ${typeof textDynamic}`);
 textDynamic = "8" / "2";
 console.log(`value: ${textDynamic}, type: ${typeof textDynamic}`);
+
+// Note!
+// Immutable data type: 데이터 자체를 절대 변경하지 못함
+// Muttable: 변경이 가능한 데이터 타입
