@@ -23,7 +23,7 @@ function printWithDelay(print, timeout) {
 }
 printWithDelay(() => console.log("async callback"), 2000);
 
-// 콜백 지옥 체험
+// ** 콜백 지옥 체험 **
 class UserStorage {
   loginUser(id, password, onSuccess, onError) {
     setTimeout(() => {
